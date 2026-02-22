@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#bg-video{
+    background-position-x: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#minecraft{
+    text-align: center;
+    align-items: center;
+    padding-top: 200px;
+    color: white;
+    font-size: xx-large;
+}
+#play{
+    margin-top: 30px;
+    background-color: rgb(204, 204, 204);
+    width: auto;
+    margin-right:400px;
+    margin-left: 400px;
+    font: message-box;
+    font-size: xx-large;
+    border-style: solid;
+    padding: 0px;
+    border-width: 7px;
+    border-top-color: rgb(58, 58, 58);
+    border-right-color: rgb(58, 58, 58);
+    border-bottom-color: grey;
+    border-left-color: grey;
+
+}
+#play:hover{
+    border-bottom-color: rgb(58, 58, 58);
+    border-left-color: rgb(58, 58, 58);
+    border-top-color: grey;
+    border-right-color: grey;
+    cursor: pointer;
+}
+#playtext{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+#watch{
+    margin-top: 30px;
+    background-color: rgb(204, 204, 204);
+    width: auto;
+    margin-right:400px;
+    margin-left: 400px;
+    font-size: xx-large;
+    border-style: solid;
+    padding: 0px;
+    border-width: 7px;
+    border-top-color: rgb(58, 58, 58);
+    border-right-color: rgb(58, 58, 58);
+    border-bottom-color: grey;
+    border-left-color: grey;
+
+}
+#watch:hover{
+    border-bottom-color: rgb(58, 58, 58);
+    border-left-color: rgb(58, 58, 58);
+    border-top-color: grey;
+    border-right-color: grey;
+    cursor: pointer;
+}
+#playwatch{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+#watchlinka{
+    color: black;
+    text-decoration: none;
+    font: message-box;
+}
