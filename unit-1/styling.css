@@ -1,0 +1,27 @@
+
+        body{
+            background-color: rgb(33, 33, 33);
+            color: rgb(177, 156, 131);
+        }
+        h2{
+            text-align: center;
+        }
+        #divright{
+            display: inline-block;
+            border: 3px solid plum;
+            padding: 5px;
+            color: rgb(93, 202, 202);
+
+        }
+        #divleft{
+            display: inline-block;
+            padding: 5px;
+            color: rgb(93, 202, 202);
+            border: 3px solid plum;
+        }
+        #demo2{
+            text-align: center;
+        }
+        #demo{
+            text-align: center;
+        }
