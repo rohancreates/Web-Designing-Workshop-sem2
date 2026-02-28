@@ -1,0 +1,31 @@
+<!-- //today am gonna create a calc in js console -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(124, 124, 124);
+        }
+    </style>
+ </head>
+ <body>
+    <script>
+        let number = 0 ;
+        console.log(`number: $(number)`);
+    </script>
+
+    <button type="button" 
+     onclick="
+     console.log(`number now is:  ${number}`);
+     ">show value</button>
+
+     <button type="button" onclick="
+     number = number + 1;
+     console.log(`number now is :${number}`);
+     ">+1</button>
+ </body>
+ </html>
