@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Even or Odd Checker</title>
+
+<style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body{
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        padding:20px;
+    }
+
+    .container{
+        width:100%;
+        max-width:400px;
+        padding:30px;
+        background:rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+        border-radius:20px;
+        text-align:center;
+        color:white;
+        box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    h1{
+        margin-bottom:20px;
+        font-size:2rem;
+    }
+
+    input{
+        width:100%;
+        padding:12px;
+        border:none;
+        outline:none;
+        border-radius:10px;
+        font-size:16px;
+        margin-bottom:15px;
+    }
+
+    button{
+        width:100%;
+        padding:12px;
+        border:none;
+        border-radius:10px;
+        background:white;
+        color:#764ba2;
+        font-size:16px;
+        font-weight:bold;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        transform:translateY(-2px);
+    }
+
+    #result{
+        margin-top:20px;
+        font-size:22px;
+        font-weight:bold;
+    }
+
+    @media(max-width:500px){
+        .container{
+            padding:20px;
+        }
+
+        h1{
+            font-size:1.6rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Even or Odd Checker</h1>
+
+    <input type="number" id="number" placeholder="Enter a number">
+
+    <button onclick="checkNumber()">Check</button>
+
+    <p id="result"></p>
+</div>
+
+<script>
+function checkNumber() {
+    let num = document.getElementById("number").value;
+    let result = document.getElementById("result");
+
+    if (num === "") {
+        result.innerHTML = "Please enter a number!";
+        return;
+    }
+
+    num = Number(num);
+
+    if (num % 2 === 0) {
+        result.innerHTML = num + " is Even";
+    } else {
+        result.innerHTML = num + " is Odd";
+    }
+}
+</script>
+
+</body>
+</html>
